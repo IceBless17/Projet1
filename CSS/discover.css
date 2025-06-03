@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Montage en tete : debut*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(0, 72, 255);
+    color: white;
+}
+
+.menu ul{ /*modification style de liste*/
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    margin: 15px;
+    gap: 2rem; /*Espace entre le mot de navigation*/
+}
+
+.menu a{ /*modif elements de la liste*/
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+/* Montage en tete : fin*/
+.menu a:hover{ /*modif elements de la liste*/
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 15px; 
+    transition: background-color 0.3s, border-radius 0.3s;
+    font-weight: bold;
+}
+
+h2{
+    margin: 25px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    border-bottom: 2px solid rgb(38, 38, 38);
+    border-top: 2px solid rgb(38, 38, 38);
+}

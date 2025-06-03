@@ -4,6 +4,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Montage en tete : debut*/
+body{
+    background-color: whitesmoke;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -30,9 +33,10 @@ header{
 .menu a:hover{ /*modif elements de la liste*/
     background-color: white;
     color: black;
-    border-radius: 10px;
-    padding: 5px; 
+    border-radius: 15px;
+    padding: 15px; 
     transition: background-color 0.3s, border-radius 0.3s;
+    font-weight: bold;
 }
 
 .bgimg-content{ /*image noircie avec linear-gradient*/
