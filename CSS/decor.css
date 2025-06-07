@@ -179,13 +179,10 @@ h2{
 }
 
 footer{
-    margin-top: 61px;
-    text-align: center;
     background-color: red;
-    color: #fff;
-    width: 100%;
-    height: 130px;
-    padding-top: 91px;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
 }
 
 /*.copy{

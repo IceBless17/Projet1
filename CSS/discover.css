@@ -48,3 +48,303 @@ h2{
     border-bottom: 2px solid rgb(38, 38, 38);
     border-top: 2px solid rgb(38, 38, 38);
 }
+
+#classification{
+    h3{
+        font-style: italic;
+        font-size: 30px;
+    }
+    .cat{
+        margin-top: 20px;
+    }
+    .articles{
+        display: flex; 
+        /*grid-template-columns: repeat(3, 1fr);*/ 
+        /*gap: 53px;*/
+        /*border: 2px solid black;*/
+        justify-content: left;
+        margin-top: 30px;
+        /*background-color: whitesmoke;*/
+        background-color: rgb(38, 38, 38);
+    }
+    .articles img{
+        height: 170px;
+        width: 150px;
+        /*border: 2px solid black;*/
+    }
+    .article{
+        border: 2px solid black;
+        height: 170px;
+    }
+    .mon-bouton{
+        padding: 5px 10px;
+        /*margin-left: 1198px;*/
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .bouton{
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        bottom: 126px;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre{
+        position: absolute;
+        right: 15px;
+        top: 17rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    }
+    .describing{ /*toutes les modif*/
+        font-size: 25px;
+    }
+    .bouton2{ /*debut modif 2*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 38.5rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton2:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre2{
+        position: absolute;
+        right: 15px;
+        top: 30rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 2*/
+    .bouton3{ /*debut modif 3*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 51.2rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton3:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre3{
+        position: absolute;
+        right: 15px;
+        top: 42.5rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 3*/
+    .bouton4{ /*debut modif 4*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 64rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton4:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre4{
+        position: absolute;
+        right: 15px;
+        top: 55.3rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 4*/
+    .bouton5{ /*debut modif 5*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 80.3rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre5{
+        position: absolute;
+        right: 15px;
+        top: 71.5rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 5*/
+    .bouton6{ /*debut modif 6*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 93rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre6{
+        position: absolute;
+        right: 15px;
+        top: 84.3rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 6*/
+    .bouton7{ /*debut modif 7*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 105.7rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre7{
+        position: absolute;
+        right: 15px;
+        top: 97rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 7*/
+    .bouton8{ /*debut modif 8*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 122rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre8{
+        position: absolute;
+        right: 15px;
+        top: 113.5rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 8*/
+    .bouton9{ /*debut modif 9*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 134.7rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre9{
+        position: absolute;
+        right: 15px;
+        top: 126rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 9*/
+    .bouton10{ /*debut modif 10*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 147.4rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre10{
+        position: absolute;
+        right: 15px;
+        top: 138.9rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 10*/
+    .bouton11{ /*debut modif 11*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 160.2rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre11{
+        position: absolute;
+        right: 15px;
+        top: 151.7rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 11*/
+    .bouton12{ /*debut modif 12*/
+        position: absolute;
+        right: 5px;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        top: 173rem;
+        transition: 0.1s;
+    } 
+    /*.mon-bouton5:hover{ 
+        border: 5px solid red;
+    }*/
+    .titre12{
+        position: absolute;
+        right: 15px;
+        top: 164.5rem;
+        font-style: italic;
+        justify-content: space-between;
+        text-align: end;
+        font-size: 25px;
+    } /*fin modif 12*/
+}
+
+footer{
+    background-color: red;
+    margin-top: 45px;
+    padding: 50px;
+    text-align: center;
+}
