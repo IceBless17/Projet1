@@ -14,11 +14,16 @@ header{
     color: white;
 }
 
+header img{
+    height: 100px;
+    width: 80px;
+}
+
 .menu ul{ /*modification style de liste*/
     display: flex;
     list-style: none;
     padding: 15px;
-    margin: 15px;
+    margin-right: 350px;
     gap: 2rem; /*Espace entre le mot de navigation*/
 }
 
