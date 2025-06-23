@@ -18,11 +18,21 @@ header img{
     width: 80px;
 }
 
+.basket img{
+    height: 50px;
+    width: 80px;
+}
+
+.basket:hover{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
 .menu ul{ /*modification style de liste*/
     display: flex;
     list-style: none;
     padding: 15px;
-    margin-right: 350px;
     gap: 2rem; /*Espace entre le mot de navigation*/
 }
 
@@ -96,7 +106,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        bottom: 126px;
+        bottom: 106px;
         transition: 0.1s;
     } 
     /*.mon-bouton:hover{ 
@@ -105,7 +115,7 @@ h2{
     .titre{
         position: absolute;
         right: 15px;
-        top: 17rem;
+        top: 18.5rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -120,7 +130,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 38.5rem;
+        top: 39.8rem;
         transition: 0.1s;
     } 
     /*.mon-bouton2:hover{ 
@@ -129,7 +139,7 @@ h2{
     .titre2{
         position: absolute;
         right: 15px;
-        top: 30rem;
+        top: 31.2rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -141,7 +151,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 51.2rem;
+        top: 52.5rem;
         transition: 0.1s;
     } 
     /*.mon-bouton3:hover{ 
@@ -150,7 +160,7 @@ h2{
     .titre3{
         position: absolute;
         right: 15px;
-        top: 42.5rem;
+        top: 43.9rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -162,7 +172,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 64rem;
+        top: 65.3rem;
         transition: 0.1s;
     } 
     /*.mon-bouton4:hover{ 
@@ -171,7 +181,7 @@ h2{
     .titre4{
         position: absolute;
         right: 15px;
-        top: 55.3rem;
+        top: 56.8rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -183,7 +193,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 80.3rem;
+        top: 81.6rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -192,7 +202,7 @@ h2{
     .titre5{
         position: absolute;
         right: 15px;
-        top: 71.5rem;
+        top: 73.1rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -204,7 +214,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 93rem;
+        top: 94.3rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -213,7 +223,7 @@ h2{
     .titre6{
         position: absolute;
         right: 15px;
-        top: 84.3rem;
+        top: 85.8rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -225,7 +235,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 105.7rem;
+        top: 107rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -234,7 +244,7 @@ h2{
     .titre7{
         position: absolute;
         right: 15px;
-        top: 97rem;
+        top: 98.4rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -246,7 +256,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 122rem;
+        top: 123.3rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -255,7 +265,7 @@ h2{
     .titre8{
         position: absolute;
         right: 15px;
-        top: 113.5rem;
+        top: 114.8rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -267,7 +277,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 134.7rem;
+        top: 136.1rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -276,7 +286,7 @@ h2{
     .titre9{
         position: absolute;
         right: 15px;
-        top: 126rem;
+        top: 127.5rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -288,7 +298,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 147.4rem;
+        top: 148.8rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -297,7 +307,7 @@ h2{
     .titre10{
         position: absolute;
         right: 15px;
-        top: 138.9rem;
+        top: 140.3rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -309,7 +319,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 160.2rem;
+        top: 161.6rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -318,7 +328,7 @@ h2{
     .titre11{
         position: absolute;
         right: 15px;
-        top: 151.7rem;
+        top: 153rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;
@@ -330,7 +340,7 @@ h2{
         font-style: italic;
         justify-content: space-between;
         text-align: end;
-        top: 173rem;
+        top: 174.3rem;
         transition: 0.1s;
     } 
     /*.mon-bouton5:hover{ 
@@ -339,7 +349,7 @@ h2{
     .titre12{
         position: absolute;
         right: 15px;
-        top: 164.5rem;
+        top: 165.8rem;
         font-style: italic;
         justify-content: space-between;
         text-align: end;

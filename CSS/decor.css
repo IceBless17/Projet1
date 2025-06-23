@@ -4,9 +4,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Montage en tete : debut*/
-body{
-    background-color: whitesmoke;
-}
 header{
     display: flex;
     justify-content: space-between;
@@ -20,19 +17,32 @@ header img{
     height: 100px;
     width: 80px;
 }
+.basket img{
+    height: 50px;
+    width: 80px;
+}
+
+.basket:hover{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
 
 .menu ul{ /*modification style de liste*/
     display: flex;
     list-style: none;
     padding: 15px;
-    margin: 15px;
     gap: 2rem; /*Espace entre le mot de navigation*/
-
 }
 
 .menu a{ /*modif elements de la liste*/
     text-decoration: none;
     color: white;
+    padding: 15px;
+}
+
+body{
+    background-color: whitesmoke;
 }
 /* Montage en tete : fin*/
 .menu a:hover{ /*modif elements de la liste*/
@@ -113,6 +123,11 @@ h2{
     cursor: pointer;
 }
 
+.mon-bouton:hover{
+    transition: 0.3s;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 5px 1px red;
+}
 .bouton{
     position: relative;
     text-align: end;

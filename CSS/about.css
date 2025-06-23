@@ -19,11 +19,21 @@ header img{
     width: 80px;
 }
 
+.basket img{
+    height: 50px;
+    width: 80px;
+}
+
+.basket:hover{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
 .menu ul{ /*modification style de liste*/
     display: flex;
     list-style: none;
     padding: 15px;
-    margin-right: 350px;
     gap: 2rem; /*Espace entre le mot de navigation*/
 }
 

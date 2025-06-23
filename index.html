@@ -8,7 +8,9 @@
 </head>
 <body>
     <header> <!--Partie debut d'en-tete-->
-        <img src="images/logo.png" alt="logo">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
         <nav class="menu">
             <ul>
                 <li><a href="#">Accueil</a></li>
@@ -17,6 +19,9 @@
                 <li><a href="about.html">A propos</a></li>
             </ul>
         </nav>
+        <div class="basket">
+            <img src="images/panier.webp" alt="panier">
+        </div>
     </header> <!--Partie fin d'en-tete-->
     
     <main>  <!--Partie debut corps de la page-->
@@ -28,7 +33,7 @@
         </div>
         <h2>GRAND SUCCES</h2>
         <div class="articles">
-            <div class="article">
+            <div class="article" data-noun="Influence et manipulation" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Influence et manipulation.jpeg" alt="livre4"></a>
                 </div>
@@ -37,12 +42,12 @@
                     <h4 class="catégorie">Pouvoir</h4>
                     <p class="prix">50$</p>
                     <div class="bouton">
-                        <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                        <button class="mon-bouton" onclick="addtobasket('Influence et manipulation', 25)">Obtenir</button>
                     </div>
                 </div>
             </div>
 
-             <div class="article">
+             <div class="article" data-noun="Les 48 lois du power" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/Les 48 lois du power.jpeg" alt="livre4"></a>
                 </div>
@@ -51,12 +56,12 @@
                     <h4 class="catégorie">Pouvoir</h4>
                     <p>50$</p>
                     <div class="bouton">
-                        <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                        <button class="mon-bouton" onclick="addtobasket('Les 48 lois du power', 30)">Obtenir</button>
                     </div>
                 </div>
             </div>
 
-             <div class="article">
+             <div class="article" data-noun="12 principes du succes" data-price="20">
                 <div class="image">
                     <a href="#"><img src="images/12 principes du succes.jpeg" alt="livre4"></a>
                 </div>
@@ -65,12 +70,12 @@
                     <h4 class="catégorie">Finance</h4>
                     <p class="prix">50$</p>
                     <div class="bouton">
-                        <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                        <button class="mon-bouton" onclick="addtobasket('12 principes du succes', 20)">Obtenir</button>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" data-noun="L'art de la guerre" data-price="20">
                 <div class="image">
                     <a href="#"><img src="images/L'art de la guerre.jpeg" alt="livre4"></a>
                 </div>
@@ -79,12 +84,12 @@
                     <h4 class="catégorie">Pouvoir</h4>
                     <p class="prix">50$</p>
                     <div class="bouton">
-                        <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                        <button class="mon-bouton" onclick="addtobasket('L\'art de la guerre', 20)">Obtenir</button>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" data-noun="Guide pour investir" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Guide pour investir.jpeg" alt="livre5"></a>
                 </div>
@@ -93,7 +98,7 @@
                     <h4 class="catégorie">Finance</h4>
                     <p class="prix">50$</p>
                     <div class="bouton">
-                        <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                        <button class="mon-bouton" onclick="addtobasket('Guide pour investir', 25)">Obtenir</button>
                     </div>
                 </div>       
             </div>
@@ -136,5 +141,7 @@
     <footer> <!--Pied de page-->
         <p class="copy"> &copy; 2025 BookStore Tous droits reservés</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
