@@ -1,8 +1,9 @@
-function addtobasket(noun, price) {
+function addtobasket(name, price) {
+  // Récupère le basket depuis localStorage ou initialise un tableau vide
   let basket = JSON.parse(localStorage.getItem('basket')) || [];
 
   // Vérifie si le produit est déjà dans le panier
-  let index = basket.findIndex(article => article.noun === noun);
+  let index = basket.findIndex(article => article.name === name);
   if (index !== -1) {
     if (basket[index].quantite < 5) { 
       basket[index].quantite++;
@@ -11,23 +12,24 @@ function addtobasket(noun, price) {
       return;
     }
   } else {
-    basket.push({ nom: noun, prix: price, quantite: 1 });
+    basket.push({ name: name, price: price, quantite: 1 });
   }
 
   localStorage.setItem('basket', JSON.stringify(basket));
-  alert(noun + " ajouté au panier.");
+  alert(name + " ajouté au panier.");
   updateBadge();
 }
 
 function updateBadge() {
   let basket = JSON.parse(localStorage.getItem('basket')) || [];
   let totalArticles = basket.reduce((somme, article) => somme + article.quantite, 0);
-  let badge = document.querySelector(".badge-panier");
+    // Cherche un badge existant ou crée-le dans la div .basket
+  let badge = document.querySelector(".badge-basket");
   if (!badge) {
-    const panierLink = document.querySelector(".bouton-panier");
+    const basketContainer = document.querySelector(".basket");
     let span = document.createElement("span");
-    span.classList.add("badge-panier");
-    panierLink.appendChild(span);
+    span.classList.add("badge-basket");
+    basketContainer.appendChild(span);
     badge = span;
   }
   if (totalArticles > 0) {
@@ -38,4 +40,10 @@ function updateBadge() {
   }
 }
 
-window.onload = updateBadge;
+// On s'assure que le DOM est chargé avant d'exécuter updateBadge
+document.addEventListener("DOMContentLoaded", function() {
+  updateBadge();
+});
+
+
+//window.onload = updateBadge;

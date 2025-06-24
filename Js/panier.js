@@ -1,48 +1,55 @@
-function afficherPanier() {
+function showbasket() {
   const basket = JSON.parse(localStorage.getItem('basket')) || [];
   const container = document.getElementById('basket-content');
   let total = 0;
 
-  if (panier.length === 0) {
+  if (basket.length === 0) {
     container.innerHTML = "<p>Ton panier est vide.</p>";
-    document.querySelector("button[onclick='soumettreCommande()']").disabled = true;
+    // Désactive le bouton si le basket est vide
+    const submitBtn = document.querySelector("button[onclick='submitorder()']");
+    if (submitBtn) {
+      submitBtn.disabled = true;
+    }
     return;
   }
 
   let html = "<ul>";
 
-  panier.forEach((article, index) => {
+  basket.forEach((article, index) => {
     const totalArticle = article.price * article.quantite;
     total += totalArticle;
 
     html += `
       <li>
-        ${article.noun} - ${article.price}€ x ${article.quantite} = ${totalArticle}€
-        <button onclick="supprimerArticle(${index})">Supprimer</button>
+        ${article.name} - ${article.price}$ x ${article.quantite}$ = ${totalArticle}$
+        <button onclick="removearticle(${index})">Supprimer</button>
       </li>
     `;
   });
 
   html += "</ul>";
   container.innerHTML = html;
-  document.getElementById("total").textContent = total + " €";
+  document.getElementById("total").textContent = total + " $";
 }
 
-function supprimerArticle(index) {
-  const basket = JSON.parse(localStorage.getItem('basket')) || [];
+function removearticle(index) {
+  let basket = JSON.parse(localStorage.getItem('basket')) || [];
   basket.splice(index, 1);
-  localStorage.setItem('panier', JSON.stringify(basket));
-  afficherPanier();
+  localStorage.setItem('basket', JSON.stringify(basket));
+  showbasket();
 }
 
-function soumettreCommande() {
+function submitorder() {
   alert("Commande envoyée avec succès !");
-  localStorage.removeItem('basket');
+  localStorage.removeartcile('basket');
   location.reload();
 }
 
-function retourBoutique() {
+function returntoshop() {
   window.location.href = "index.html";
 }
 
-window.onload = afficherPanier;
+// On affiche le contenu du basket lorsque le DOM est chargé
+document.addEventListener("DOMContentLoaded", function() {
+  showbasket();
+});
