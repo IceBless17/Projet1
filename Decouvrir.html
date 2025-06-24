@@ -19,8 +19,8 @@
                 <li><a href="about.html">A propos</a></li>
             </ul>
         </nav>
-        <div class="basket">
-            <img src="images/panier.webp" alt="panier">
+        <div class="basket"> <!-- La div basket est utilisée pour afficher le badge du nombre d'articles -->
+            <a href="panier.html"><img src="images/panier.webp" alt="panier"></a>
         </div>
     </header> <!--Partie fin d'en-tete-->
     <section id="collection">
@@ -30,195 +30,195 @@
     <section id="classification">
         <h3 class="cat">MINDSET</h3>
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Atomic Habits" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Atomic Habits.jpeg" alt="Atomic Habits"></a>
                 </div>
                 <div class="titre">
                     <p class="bookname">ATOMIC HABITS</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">25$</p>
                     <p class="describing">Changez vos habitudes, transformez votre vie!!! Un petit pas à la fois</p>
                 </div>    
                 <div class="bouton">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Atomic Habits', 25)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="L'art subtil de s'en foutre" data-price="20">
                 <div class="image">
                     <a href="#"><img src="images/L'art subtil de s'en foutre.jpeg" alt="Art subtil"></a>
                 </div>
                 <div class="titre2">
                     <p class="bookname">L'ART SUBTIL DE S'EN FOUTRE</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">20$</p>
                     <p class="describing">Apprends à lacher prise sur l'unitile pour te concentrer sur l'essentiel</p>
                 </div>    
                 <div class="bouton2">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('L\'art subtil de s\'en foutre', 20)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Les lois du succes" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Les lois du succes.jpeg" alt="Lois du succes"></a>
                 </div>
                 <div class="titre3">
                     <p class="bookname">LES LOIS DU SUCCES</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">25$</p>
                     <p class="describing">Des principes mentaux et pratiques pour réussir dans tous les domaines de la vie</p>
                 </div>
                 <div class="bouton3">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Les lois du succes', 25)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Atteindre l'excellence" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Atteindre l'excellence.jpeg" alt="Atteindre l'excellence"></a>
                 </div>
                 <div class="titre4">
                     <p class="bookname">ATTEINDRE L'EXCELLENCE</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">25$</p>
                     <p class="describing">L'excellence vient de la pratique intense et intentionnelle</p>
                 </div>
                 <div class="bouton4">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Atteindre l\'excellence', 25)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <h3 class="cat">FINANCE</h3>
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="L'homme le plus riche de Babylone" data-price="20">
                 <div class="image">
                     <a href="#"><img src="images/L'homme le plus riche de Babylone.jpeg" alt="Riche de Babylone"></a>
                 </div>
                 <div class="titre5">
                     <p class="bookname">L'HOMME LE PLUS RICHE DE BABYLONE</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">20$</p>
                     <p class="describing">Epargne, investis et fais travailler ton argent</p>
                 </div>
                 <div class="bouton5">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('L\'homme le plus riche de Babylone', 20)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="L'investisseur intelligent" data-price="20">
                 <div class="image">
                     <a href="#"><img src="images/L'investisseur intelligent.jpeg" alt="Investisseur Intelligent"></a>
                 </div>
                 <div class="titre6">
                     <p class="bookname">L'INVESTISSEUR INTELLIGENT</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">20$</p>
                     <p class="describing">Investis avec prudence, logique et vision à long terme</p>
                 </div>
                 <div class="bouton6">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('L\'investisseur intelligent', 20)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Guide pour investir" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/Guide pour investir.jpeg" alt="Guide pour investir"></a>
                 </div>
                 <div class="titre7">
                     <p class="bookname">GUIDE POUR INVESTIR</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">30$</p>
                     <p class="describing">Comprends la différence entre actif et passif pour ta liberté financière</p>
                 </div>
                 <div class="bouton7">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Guide pour investir', 30)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <h3 class="cat">POUVOIR</h3>
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Les 48 lois du pouvoir" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/Les 48 lois du power.jpeg" alt="48 lois du pouvoir"></a>
                 </div>
                 <div class="titre8">
                     <p class="bookname">LES 48 LOIS DU POUVOIR</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">30$</p>
                     <p class="describing">Maîtrise les dynamiques sociales, manipule intelligemment et protège ton influence</p>
                 </div>
                 <div class="bouton8">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Les 48 lois du pouvoir', 30)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Les 33 lois de la guerre" data-price="25">
                 <div class="image">
                     <a href="#"><img src="images/Les 33 lois de la guerre.jpeg" alt="33 lois de la guerre"></a>
                 </div>
                 <div class="titre9">
                     <p class="bookname">LES 33 LOIS DE LA GUERRE</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">25$</p>
                     <p class="describing">Applique les stratégies militaires à la vie quotidienne pour vaincre sans te brûler</p>
                 </div>
                 <div class="bouton9">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Les 33 lois de la guerre', 25)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="L'art de la guerre" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/L'art de la guerre.jpeg" alt="Art de la guerre"></a>
                 </div>
                 <div class="titre10">
                     <p class="bookname">L'ART DE LA GUERRE</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">30$</p>
                     <p class="describing">La victoire dépend de la stratégie, pas de la force. Connais-toi, connais l'autre</p>
                 </div>
                 <div class="bouton10">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('L\'art de la guerre', 30)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="Influence et manipulation" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/Influence et manipulation.jpeg" alt="Influence et manipulation"></a>
                 </div>
                 <div class="titre11">
                     <p class="bookname">INFLUENCE ET MANIPULATION</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">30$</p>
                     <p class="describing">Découvre les mécanismes psychologiques qui font dire "oui" sans réfléchir</p>
                 </div>
                 <div class="bouton11">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('Influence et manipulation', 30)">Obtenir</button>
                 </div>
             </div>
         </div>
 
         <div class="articles">
-            <div class="article">
+            <div class="article" data-name="12 principes du succes" data-price="30">
                 <div class="image">
                     <a href="#"><img src="images/12 principes du succes.jpeg" alt="12 principes du succes"></a>
                 </div>
                 <div class="titre12">
                     <p class="bookname">12 PRINCIPES DU SUCCES</p>
-                    <p class="prix">50$</p>
+                    <p class="prix">30$</p>
                     <p class="describing">Aligne ton esprit, ta foi et ton action pour transformer ton potentiel en réalité</p>
                 </div>
                 <div class="bouton12">
-                    <a href="#"><button class="mon-bouton">Obtenir</button></a>
+                    <button class="mon-bouton" onclick="addtobasket('12 principes du succes', 30)">Obtenir</button>
                 </div>
             </div>
         </div>
@@ -227,5 +227,7 @@
     <footer> <!--Pied de page-->
         <p class="copy"> &copy; 2025 BookStore Tous droits reservés</p>
     </footer>
+
+    <script src="Js/index.js"></script>
 </body>
 </html>
