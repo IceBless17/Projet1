@@ -21,7 +21,7 @@ function showbasket() {
 
     html += `
       <li>
-        ${article.name} - ${article.price}$ x ${article.quantite}$ = ${totalArticle}$
+        ${article.name} - ${article.price}$ x ${article.quantite} = ${totalArticle}$
         <button onclick="removearticle(${index})">Supprimer</button>
       </li>
     `;

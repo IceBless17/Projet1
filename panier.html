@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <title>Mon Panier</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="CSS/panier.css" />
 </head>
 <body>
-  <h1>Contenu du panier</h1>
+  <header> <!--Partie debut d'en-tete-->
+    <div class="logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+    <h1>MON PANIER</h1>
+    <div class="basket"> <!-- La div basket est utilisée pour afficher le badge du nombre d'articles -->
+      <a href="decouvrir.html"><img src="images/panier.webp" alt="panier"></a>
+    </div>
+  </header> <!--Partie fin d'en-tete-->
 
   <div id="basket-content"></div>
   <p><strong>Total : </strong><span id="total">0 $</span></p>
 
   <button onclick="returntoshop()">Ajouter d'autres livres</button>
   <button onclick="submitorder()">Soumettre la commande</button>
+
+  <footer> <!--Pied de page-->
+    <p class="copy"> &copy; 2025 BookStore Tous droits reservés</p>
+  </footer>
 
   <script src="Js/panier.js"></script>
 </body>
