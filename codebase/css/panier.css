@@ -9,17 +9,29 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: rgb(0, 72, 255);
+    background-color: #134b82;
     color: white;
 }
 
-header img{
+.logo img{
     height: 100px;
     width: 80px;
+    border-radius: 0 0 24px 24px;
 }
+
 .basket img{
     height: 50px;
     width: 80px;
+    padding: 5px 5px 0 0;
+}
+
+.badge-basket{
+    background-color: saddlebrown;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    border-radius: 25px;
+    font-weight: bold;
 }
 
 .basket:hover{
@@ -27,6 +39,7 @@ header img{
     border-radius: 25px;
     transition: background-color 0.3s, border-radius 0.3s;
 }
+
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -89,8 +102,8 @@ p {
 }
 
 /* Boutons principaux */
-button[onclick^="returntoshop"], button[onclick^="submitorder"] {
-    background: #0048ff;
+button[onclick^="returntoshop"], button[onclick^="submitorder"] { /*les entre crochets evoque la stylisation des boutons*/
+    background: #134b82;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -102,24 +115,25 @@ button[onclick^="returntoshop"], button[onclick^="submitorder"] {
     transition: background 0.2s;
 }
 button[onclick^="returntoshop"]:hover, button[onclick^="submitorder"]:hover {
-    background: darkblue;
+    background: #2575fc;
 }
 
-button[disabled] {
-    background: #ccc !important;
+button[disabled] { /*stylisation du bouton soumission si desactivé en rapport avec js*/
+    background: #ccc !important; /* !important : force la propriete malgre l'elt parent*/
     color: #888 !important;
     cursor: not-allowed;
 }
 
-footer{
-    background-color: red;
+footer, .copy{
+    background-color: #134b82;
     margin-top: 45px;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
+    color: white;
 }
 
-/* Responsive 
-@media (max-width: 700px) {
+/* Responsive */
+@media (max-width: 800px) {
     #basket-content {
         padding: 16px 6px 16px 6px;
     }
@@ -130,5 +144,7 @@ footer{
         width: 100%;
         margin: 10px 0 0 0;
     }
+    footer{
+        margin-top: 100px;
+    }
 }
-*/

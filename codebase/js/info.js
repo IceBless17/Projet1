@@ -11,30 +11,27 @@ const bookinfo = {
     "i10": "<h2>L'art de la guerre</h2><p>Un classique intemporel sur la stratégie, la discipline et la maîtrise de soi. Chaque aphorisme est une perle de sagesse pour prendre l'ascendant sans confrontation directe. Utilisé par des chefs d'entreprise, des avocats, des coachs… la guerre devient art.</p><p>Auteur : Sun Tzu</p><p>Prix : 30$</p>",
     "i11": "<h2>Influence et manipulation</h2><p>Vous voulez comprendre pourquoi vous cédez à certaines demandes ? Ce livre dévoile les 6 leviers psychologiques de l'influence, utilisés dans la vente, le marketing, et même les relations personnelles. À lire pour apprendre à convaincre… ou à ne plus se faire avoir.</p><p>Auteur : Robert Cialdini</p><p>Prix : 30$</p>",
     "i12": "<h2>Les 12 principes du succes</h2><p>Un guide pour ceux qui veulent débloquer leur potentiel intérieur. Proctor y partage des principes comme la clarté d'objectif, la décision, la persistance, la visualisation et la confiance. C'est un livre qui vous pousse à changer votre manière de penser pour changer votre vie.</p><p>Auteur : Bob Proctor</p><p>Prix : 30$</p>"
-}
+} // Informations sur les livres, format : "id": "contenu HTML"
 
 // Gestion de la modale centrale
-const modal = document.getElementById('modalContent');
-const overlay = document.getElementById('modalOverlay');
+const modal = document.getElementById('modalContent'); // Contenu de la modale
+const overlay = document.getElementById('modalOverlay'); // Overlay pour le fond de la modale
 
-const images = document.querySelectorAll('.image');
+const images = document.querySelectorAll('.image'); // Sélectionne toutes les images avec la classe "image"
+// Ajoute un écouteur d'événement pour chaque image
 images.forEach(image => {
     const id = image.getAttribute('data-id');
     image.querySelector('img').addEventListener('click', () => {
-        modal.innerHTML = bookinfo[id] + '<button class="close">Fermer</button>';
+        modal.innerHTML = bookinfo[id] + '<button class="close">Fermer</button>'; // Met à jour le contenu de la modale avec les informations du livre
+        // Affiche la modale et l'overlay
         modal.style.display = 'block';
         overlay.style.display = 'block';
         // Fermeture par bouton
         const closeBtn = modal.querySelector('.close');
         closeBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
+            e.stopPropagation(); // Empêche la propagation de l'événement pour éviter de fermer la modale en cliquant sur l'overlay
             modal.style.display = 'none';
             overlay.style.display = 'none';
         });
     });
-});
-// Fermeture par clic sur overlay
-overlay.addEventListener('click', () => {
-    modal.style.display = 'none';
-    overlay.style.display = 'none';
 });

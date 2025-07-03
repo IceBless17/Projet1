@@ -3,7 +3,7 @@ function addtobasket(name, price) {
   let basket = JSON.parse(localStorage.getItem('basket')) || [];
 
   // Vérifie si le produit est déjà dans le panier
-  let index = basket.findIndex(article => article.name === name);
+  let index = basket.findIndex(article => article.name === name); //index contient la position du produit dans le panier
   if (index !== -1) {
     if (basket[index].quantite < 5) { 
       basket[index].quantite++;
@@ -12,29 +12,30 @@ function addtobasket(name, price) {
       return;
     }
   } else {
-    basket.push({ name: name, price: price, quantite: 1 });
+    basket.push({ name: name, price: price, quantite: 1 }); // Ajoute le produit avec une quantité de 1
   }
 
-  localStorage.setItem('basket', JSON.stringify(basket));
+  localStorage.setItem('basket', JSON.stringify(basket)); // Enregistre le panier mis à jour dans localStorage
   alert(name + " ajouté au panier.");
   updateBadge();
 }
 
 function updateBadge() {
-  let basket = JSON.parse(localStorage.getItem('basket')) || [];
+  let basket = JSON.parse(localStorage.getItem('basket')) || []; // Récupère le panier depuis localStorage ou initialise un tableau vide
+  // Calcule le nombre total d'articles dans le panier
   let totalArticles = basket.reduce((somme, article) => somme + article.quantite, 0);
     // Cherche un badge existant ou crée-le dans la div .basket
   let badge = document.querySelector(".badge-basket");
   if (!badge) {
-    const basketContainer = document.querySelector(".basket");
-    let span = document.createElement("span");
+    const basketContainer = document.querySelector(".basket"); // Sélectionne la div .basket
+    let span = document.createElement("span"); 
     span.classList.add("badge-basket");
-    basketContainer.appendChild(span);
+    basketContainer.appendChild(span); 
     badge = span;
   }
   if (totalArticles > 0) {
-    badge.textContent = totalArticles;
-    badge.style.display = "inline-block";
+    badge.textContent = totalArticles; // Met à jour le texte du badge avec le nombre total d'articles
+    badge.style.display = "inline-block"; // Affiche le badge
   } else {
     badge.style.display = "none";
   }
@@ -44,6 +45,3 @@ function updateBadge() {
 document.addEventListener("DOMContentLoaded", function() {
   updateBadge();
 });
-
-
-//window.onload = updateBadge;
